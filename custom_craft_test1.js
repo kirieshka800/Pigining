@@ -4,6 +4,9 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'mekanism:advanced_control_circuit' })
     event.remove({ output: 'mekanism:energy_tablet' })
     event.remove({ output: 'mekanism:mekasuit_helmet' })
+    event.remove({ output: 'mekanism:mekasuit_bodyarmor' })
+    event.remove({ output: 'mekanism:mekasuit_pants' })
+    event.remove({ output: 'mekanism:mekasuit_boots' })
     event.shaped(
         Item.of('mekanism:steel_casing', 1),
         [
@@ -72,6 +75,54 @@ ServerEvents.recipes(event => {
            Q:'minecraft:netherite_helmet',
            I:'mekanism:pellet_polonium',
            J:'mekanism:basic_induction_cell'
+        }
+    )
+    event.shaped(
+        Item.of('mekanism:mekasuit_bodyarmor', 1),
+        [
+            'ABA',
+            'CQC',
+            'IJI'
+        ],
+        {
+            A:'createaddition:electric_motor',
+            B:'mekanism:ultimate_control_circuit',
+            C:'mekanism:hdpe_sheet',
+            Q:'minecraft:netherite_chestplate',
+            I:'mekanism:pellet_polonium',
+            J:'mekanism:basic_induction_cell'
+        }
+    )
+    event.shaped(
+        Item.of('mekanism:mekasuit_pants', 1),
+        [
+            'ABA',
+            'CQC',
+            'IJI'
+        ],
+        {
+            A:'createaddition:electric_motor',
+            B:'mekanism:ultimate_control_circuit',
+            C:'mekanism:hdpe_sheet',
+            Q:'minecraft:netherite_leggings',
+            I:'mekanism:pellet_polonium',
+            J:'mekanism:basic_induction_cell'
+        }
+    )
+    event.shaped(
+        Item.of('mekanism:mekasuit_boots', 1),
+        [
+            'ABA',
+            'CQC',
+            'IJI'
+        ],
+        {
+            A:'createaddition:electric_motor',
+            B:'mekanism:ultimate_control_circuit',
+            C:'mekanism:hdpe_sheet',
+            Q:'minecraft:netherite_boots',
+            I:'mekanism:pellet_polonium',
+            J:'mekanism:basic_induction_cell'
         }
     )
 
