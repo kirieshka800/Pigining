@@ -72,7 +72,7 @@ ServerEvents.recipes(event => {
            A:'createaddition:electric_motor',
            B:'mekanism:ultimate_control_circuit',
            C:'mekanism:hdpe_sheet',
-           Q:'minecraft:netherite_helmet',
+           Q:'#forge:dragonsteelhead',
            I:'mekanism:pellet_polonium',
            J:'mekanism:basic_induction_cell'
         }
@@ -88,7 +88,7 @@ ServerEvents.recipes(event => {
             A:'createaddition:electric_motor',
             B:'mekanism:ultimate_control_circuit',
             C:'mekanism:hdpe_sheet',
-            Q:'minecraft:netherite_chestplate',
+            Q:'#forge:dragonsteelbody',
             I:'mekanism:pellet_polonium',
             J:'mekanism:basic_induction_cell'
         }
@@ -104,7 +104,7 @@ ServerEvents.recipes(event => {
             A:'createaddition:electric_motor',
             B:'mekanism:ultimate_control_circuit',
             C:'mekanism:hdpe_sheet',
-            Q:'minecraft:netherite_leggings',
+            Q:'#forge:dragonsteellegs',
             I:'mekanism:pellet_polonium',
             J:'mekanism:basic_induction_cell'
         }
@@ -120,7 +120,7 @@ ServerEvents.recipes(event => {
             A:'createaddition:electric_motor',
             B:'mekanism:ultimate_control_circuit',
             C:'mekanism:hdpe_sheet',
-            Q:'minecraft:netherite_boots',
+            Q:'#forge:dragonsteelboots',
             I:'mekanism:pellet_polonium',
             J:'mekanism:basic_induction_cell'
         }
