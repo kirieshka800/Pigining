@@ -7,6 +7,11 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'mekanism:mekasuit_bodyarmor' })
     event.remove({ output: 'mekanism:mekasuit_pants' })
     event.remove({ output: 'mekanism:mekasuit_boots' })
+    event.remove({ output: 'mekanismgenerators:wind_generator' })
+    event.remove({ output: 'mekanismgenerators:solar_panel' })
+    event.remove({ output: 'mekanism:atomic_disassembler' })
+    event.remove({ output: 'mekanism:mekasuit_boots' })
+    event.remove({ output: 'mekanism:mekasuit_boots' })
     event.shaped(
         Item.of('mekanism:steel_casing', 1),
         [
@@ -125,5 +130,46 @@ ServerEvents.recipes(event => {
             J:'mekanism:basic_induction_cell'
         }
     )
-
+    event.shaped(
+        Item.of('mekanism:atomic_disassembler', 1),
+        [
+            'ABA',
+            'AQA',
+            'IJI'
+        ],
+        {
+            A:'mekanism:advanced_control_circuit',
+            B:'mekanism:energy_tablet',
+            Q:'mekanism:alloy_atomic',
+            J:'mekanism:ingot_refined_obsidian',
+            I:'create_things_and_misc:vibration_mechanism'
+        }
+    )
+    event.shaped(
+        Item.of('mekanismgenerators:solar_panel', 1),
+        [
+            'AAA',
+            'JQJ',
+            'BBB'
+        ],
+        {
+            A:'#forge:glass_panes',
+            B:'mekanism:ingot_osmium',
+            Q:'mekanism:advanced_control_circuit',
+            J:'minecraft:redstone',
+        }
+    )
+    event.shaped(
+        Item.of('mekanismgenerators:wind_generator', 1),
+        [
+            ' A ',
+            'AQA',
+            'B B'
+        ],
+        {
+            A:'mekanism:ingot_osmium',
+            B:'mekanism:energy_tablet',
+            Q:'mekanism:advanced_control_circuit'
+        }
+    )
 })
