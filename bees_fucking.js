@@ -1,15 +1,16 @@
 
-    EntityEvents.tick(event => {
-    let entity = event.entity;
+EntityEvents.update(event => {
+    const bee = event.entity;
 
-    if (entity.type == 'minecraft:bee') {
 
-        entity.persistentData.activeOverride = true;
+    if (bee.type == 'minecraft:bee') {
+        const level = bee.level;
 
-        if (event.level.isRaining() || event.level.isThundering() || !event.level.isDay()) {
+        if (!level.isDay() || level.isRaining() || level.isThundering()) {
 
-            entity.setNoAi(false);
-            entity.setSprinting(true);
+            bee.setNoAi(false);
+
+
         }
     }
-})
+});
